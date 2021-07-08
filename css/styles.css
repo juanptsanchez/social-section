@@ -1,0 +1,146 @@
+/* ========================================= 
+VARIABLES FONTS / COLORS
+=========================================== */
+:root {
+/* FONTS */
+--bodyFont: 'Spartan', sans-serif;
+
+/* PRIMARY COLORS */
+--veryDarkMagenta: hsl(300, 43%, 22%);
+--softPink: hsl(333, 80%, 67%);
+
+/* NEUTRAL COLORS */
+--darkGrayishMagenta: hsl(218, 22%, 67%);
+--lightGrayishMagenta: hsl(300, 24%, 96%);
+--white: hsl(0, 0%, 100%);
+}
+
+/* ========================================= 
+BOX-SIZING / FONT SIZE
+=========================================== */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* ================================================
+GLOBAL
+================================================ */
+body {
+    font-size: 1.5rem;
+    font-family: var(--bodyFont);
+    background-image: url(../images/bg-pattern-top-mobile.svg);
+    background-position: top;
+    background-size: top;
+    background-repeat: no-repeat;
+}
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+/* ================================================
+SITE HEADER
+================================================ */
+.site__header {
+    text-align: center;
+    margin-top: 6rem;
+}
+.site__header h1 {
+    color: var(--veryDarkMagenta);
+    font-size: 2.5rem;
+    width: 70%;
+    margin: auto;
+}
+.site__header p {
+    color: #7a6e7a;
+    font-size: 1.2rem;
+    font-weight: 400;
+    width: 85%;
+    margin: 2.5rem auto;
+    line-height: 2rem;
+}
+
+/* ================================================
+SCORE GENERAL
+================================================ */
+.score__general--grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 3.5rem;
+}
+.score__card {
+    background-color: var(--lightGrayishMagenta);
+    border-radius: 1rem;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    max-width: 400px;
+}
+.score__card i {
+    color: #e39b46;
+    margin-right: .5rem;
+    font-size: 1.2rem;
+}
+.score__card i:last-of-type {
+    margin-right: 0;
+}
+.score__comment p {
+    color: var(--veryDarkMagenta);
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+
+/* ================================================
+PROFILE CARDS
+================================================ */
+.profile__cards--grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 3.5rem;
+}
+.profile__card {
+    background-color: var(--veryDarkMagenta);
+    border-radius: 1rem;
+    padding: 3rem 2.5rem 2rem 2.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+/* PROFILE HEAD */
+.profile__head {
+    display: flex;
+    align-items: center;
+}
+.profile__head img {
+    border-radius: 50%;
+    width: 3.5rem;
+    margin-right: 2rem;
+}
+.head__txt h2 {
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+}
+.head__txt p {
+    color: var(--softPink);
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+}
+/* PROFILE TEXT */
+.profile__txt {
+    color: var(--white);
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 2.5rem 0 0 0;
+    line-height: 2rem;
+}
