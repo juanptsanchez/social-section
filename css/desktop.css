@@ -2,10 +2,10 @@
 GLOBAL
 ================================================ */
 body {
-    background-image: url(../images/bg-pattern-top-desktop.svg);
-    background-size: 50%;
-    background-repeat: no-repeat;
-    background-size: 50%;
+    background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+    background-position: left top, right bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto, auto;
 }
 .main--grid {
     display: grid;
